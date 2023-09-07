@@ -1,0 +1,91 @@
+.pricing-section {
+    padding: 9.6rem 0;
+}
+
+.pricing-label{
+
+    /*Client wants this font*/
+    font-family: "Dancing Script", cursive;
+    font-size: 5.2rem;
+    font-weight: 700;
+    color: #555555;
+    margin-bottom: 2.8rem;
+}
+
+.pricing-font-size{
+  font-size: 6.8rem;
+}
+
+.pricing-list-box{
+    text-align: center;
+    background-image: linear-gradient(to bottom, #faf5ee, #fdf1f2);
+    border: 1px solid #e7757f;
+    border-radius: 11px;
+    box-shadow: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.075);
+    padding: 20px;
+
+    transition: all 0.4s;
+}
+
+.pricing-list-box:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+/*Hover effect for lash lift and eyebrow lam*/
+.pricing-list-box-lash-brow:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.pricing-list{
+    list-style-type: none;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: #666666;
+
+
+}
+
+.individual-pricing{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.8rem;
+
+}
+
+.individual-pricing p{
+    font-weight: 600;
+}
+
+.individual-pricing span{
+    font-weight: 600;
+}
+
+/*Customized box for lash lift and eyebrow lamination*/
+
+.flex-column-pricing{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25%;
+}
+
+.pricing-list-box-lash-brow{
+    background-image: linear-gradient(to bottom, #faf5ee, #fdf1f2);
+    border: 1px solid #e7757f;
+    border-radius: 11px;
+    box-shadow: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.075);
+    padding: 20px;
+    height: 50%;
+    transition: all 0.4s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+

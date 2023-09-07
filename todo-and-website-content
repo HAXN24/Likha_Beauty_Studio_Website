@@ -1,0 +1,86 @@
+
+COLORS:
+Primary: #FAF5EE;
+
+
+TODO:
+1.) Optimize loading on mobile- make it faster
+2.) Modal Window For Discount? Add below the call now modal?
+3.) Favicon
+
+Screen vw and vh  for hero section = 2560 x 638.188: color: #FAF5EE
+about us section: 2560 x 1088
+
+
+ABOUT US:
+
+Welcome to Likha Beauty Studio - Nail Salon
+At Likha Beauty Studio, the art of beauty meets craftsmanship. "Likha" is rooted in a word that signifies creation,
+and that's precisely what we do with every nail service we offer. We don't just beautify nails; we transform them into miniature canvases that tell a story - your story.
+
+Situated in the heart of Prince George, our salon is more than just a place to get your nails done. It's an oasis of relaxation, a spot where you can unwind,
+indulge, and let your inner beauty shine through. Our seasoned professionals are not just nail technicians; they are artisans dedicated to perfecting their craft
+and ensuring that every client leaves with a masterpiece at their fingertips.
+
+Using only the finest materials and innovative techniques, we're committed to staying at the forefront of nail artistry.
+From classic manicures to intricate nail designs, our menu of services is curated to cater to every individual's unique style and preference.
+
+Join us and experience a world where creativity flows, beauty is crafted, and every nail tells a tale of elegance.
+
+
+SERVICES:
+
+1.) MANICURE
+2.) EXTENSION
+3.) PEDICURE
+4.) WAXING
+5.) LASH LIFT
+6.) BROW LAMINATION
+
+
+Testimonials & Gallery:
+
+*testimonials and gallery: 2560 x 1245; color: #FAF5EE
+1.) Add background image?
+2.) Need more 7 photos 800x800 or much better quality: 1920x2560 - DONE
+3.) Users can click each review container/box to check the reviews are legit! - DONE
+
+
+Pricing:
+
+Z pattern -
+
+•Manicure:
+1.) Regular - 37$
+2.) Manicure Gel - 47$
+3.) Manicure No-Polish - 30$
+4.) Nail Extension - 62$
+5.) Fill - 52$
+6.) Overlay - 57$
+7.) Extension Removal - 25$
+8.) Gel Polish Removal - 15$
+9.) Re-Apply Gel Polish - 37$
+
+•Pedicure:
+1.) Pedicure Gel - 65$
+2.) Pedicure Regular - 55$
+3.) Pedicure Man - 45$
+4.) Mini Pedicure - 45$
+
+•Waxing:
+1.) Underarms - 20$
+2.) Sideburns - 10$
+3.) Half-arms - 30$
+4.) Full-arms - 50$
+5.) Half-legs - 35$
+6.) Full-legs - 55$
+7.) Eyebrow wax - 12$
+
+•Eyebrow Lamination - 80$
+•Lash lift - 80$
+
+Learnings:
+1.) Hide nav bar when clicking img to full size;
+2.) Gets current day and time of schedule today depending on users time!
+3.) Scrolling effect for full image overlay
+4.) Embedding online booking system

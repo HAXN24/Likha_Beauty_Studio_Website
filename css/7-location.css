@@ -1,0 +1,63 @@
+
+/********************************************************************/
+/*LOCATION*/
+/********************************************************************/
+
+.location-section{
+    padding: 9.6rem 0;
+    border-top: 1px solid #eeeeee;
+}
+
+/*Make embed map adjust to its width container*/
+.likha-map{
+    width: 100%;
+}
+
+.store-hours-header{
+
+    /*Client wants this font*/
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: #323130;
+    margin-bottom: 2.8rem;
+}
+
+
+.likha-address{
+    font-size: 2.4rem;
+}
+
+.hours-list{
+    list-style-type: none;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: #666666;
+
+
+}
+
+
+.individual-hours{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.8rem;
+    font-weight: 600;
+}
+
+.hours-list .individual-hours:nth-child(1),
+.hours-list .individual-hours:nth-child(2),
+.hours-list .individual-hours:nth-child(3),
+.hours-list .individual-hours:nth-child(4),
+.hours-list .individual-hours:nth-child(5),
+.hours-list .individual-hours:nth-child(6),
+.hours-list .individual-hours:nth-child(7){
+    color: #868e96;
+}
+
+.hours-list .individual-hours:nth-child(5) span em,
+.hours-list .individual-hours:nth-child(6) span em,
+.hours-list .individual-hours:nth-child(7) span em{
+    font-style: normal;
+    color: #e1525f;
+}

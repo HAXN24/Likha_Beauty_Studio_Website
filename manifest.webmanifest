@@ -1,0 +1,12 @@
+
+{
+    "icons":[
+        { "src": "images/favicon/android-1-likha-logo-192x192.png",
+          "type": "image/png", "sizes":"192x192"
+        },
+        { "src": "images/favicon/android-2-likha-logo-512x512.png",
+          "type": "image/png", "sizes":"512x512"
+        }
+
+    ]
+}

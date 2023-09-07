@@ -1,0 +1,592 @@
+/*
+NOTE: CHANGE FONT-SIZE: 62.5% in html root - refer rem and max width work - jonas course - 1rem = 10px;
+-- 01 TYPOGRAPHY SYSTEM
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+FONTS:
+BODY: font-family: 'Rubik', sans-serif;
+H1 - HEADER -   font-family: 'Dancing Script', cursive;
+-Font weights: 400,
+
+-Line weights: 1,
+
+-- 02 COLORS
+
+Primary: #FAF5EE;
+
+-Tints: button-hovered:  #e1525f , button-link: #e7757f, pricing: gradient (to-bottom, primary, #fdf1f2)
+TAGS: #e7757f, #e1525f
+-Shades:
+-Accents:
+-Greys: #323130, hero-description & services description: #868e96, Pricing-heading: #555, pricing-list: #333
+
+-- 03 SHADOWS
+
+-- 06 BORDER-RADIUS
+
+-- 07 WHITESPACE
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /*outline: 1px solid red;*/
+
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden !important;
+
+    /*Must be in HTML*/
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1;
+    font-weight: 400;
+    color: #323130;
+
+
+    overflow-x: hidden !important;
+
+}
+
+.heading-primary {
+    font-family: 'Dancing Script', cursive;
+    font-size: 7.7rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
+}
+
+.container {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.container-location {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+
+.container-about-us {
+    padding: 0 3.2rem 3.2rem 3.2rem !important;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+
+
+}
+
+.grid:not(:last-child) {
+
+    margin-bottom: 9.6rem;
+}
+
+.grid--2--cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--2--cols-auto-fit {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3--cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4--cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5--cols {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--2--rows {
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.grid--center-v {
+    align-items: center;
+}
+
+.grid-align-self-flex-start {
+    align-self: flex-start;
+}
+
+.grid-justify-align-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.col-gap-lg {
+    column-gap: 15.9rem !important;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+    font-weight: 700;
+    color: #333333;
+    letter-spacing: -0.5px;
+}
+
+.heading-secondary {
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+
+.subheading {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #e1525f;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.075rem;
+
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+    display: inline-block;
+
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    text-decoration: none;
+
+    /*Only for .btn itself and not href*/
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+
+    transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+    background-color: #e7757f;
+    color: #fff;
+
+}
+
+.btn--full:hover,
+.btn--full:active {
+    background-color: #e1525f;
+}
+
+
+.btn--outline:link,
+.btn--outline:visited {
+    background-color: #ffffff;
+    color: #555555;
+
+}
+
+
+.btn--outline:hover,
+.btn--outline:active {
+    background-color: #fdf2e9;
+    color: #555555;
+
+    /*Section text jumps - DO NOT USE*/
+    /*border: 3px solid white;*/
+
+
+    /*Trick to add border inside*/
+    box-shadow: inset 0 0 0 3px white;
+
+}
+
+.btn--form {
+    background-color: #45260a;
+    color: #fdf2e9;
+    align-self: end;
+    padding: 1.2rem;
+}
+
+.btn--form:hover {
+    background: #ffffff;
+    color: #555555;
+}
+
+
+.link:link,
+.link:visited {
+    color: #e7757f;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+
+    display: inline-block;
+
+    transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+    color: #e7757f;
+    border-bottom: 1px solid transparent;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-item {
+    font-size: 1.8rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    line-height: 1.2;
+}
+
+.list-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #323130;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(231, 117, 127, 0.5);
+
+}
+
+
+/*ABOUT US SECTION*/
+
+
+.heading-services-in {
+
+    font-family: 'Dancing Script', cursive;
+    font-size: 4.8rem;
+    /*letter-spacing: 0.75rem;*/
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 8.0rem;
+    /*filter: brightness(0);*/
+    /*opacity: 50%;*/
+    color: rgb(51, 51, 51);
+
+}
+
+
+/*Underline effect under header*/
+
+.heading-services-in span {
+    position: relative;
+    padding-bottom: 10px;
+
+}
+
+
+.heading-services-in span:after {
+    position: absolute;
+
+    content: "";
+    width: 100%;
+    height: 10px;
+    border-top: solid 3px #e7757f;
+    bottom: -5px;
+    left: 0;
+    border-radius: 50%;
+
+}
+
+
+/*End of underline effect*/
+
+/*HELPER CLASSES / SETTINGS*/
+.margin-right-sm {
+    margin-right: 1.6rem !important;
+}
+
+.margin-left-sm {
+    margin-left: 0.8rem !important;
+}
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important;
+}
+
+.margin-bottom-lg {
+    margin-bottom: 6.4rem !important;
+}
+
+.margin-top-lg {
+    margin-top: 6.4rem !important;
+}
+
+.margin-left-lg {
+    margin-left: 35rem !important;
+}
+
+.padding-top-md {
+    padding-top: 3.2rem !important;
+}
+
+.padding-bottom-lg {
+    padding-top: 6.4rem !important;
+}
+
+.margin-none {
+    margin: 0 !important;
+}
+
+.padding-none {
+    padding: 0 !important;
+}
+
+.font-size-sm {
+    font-size: 1rem !important;
+}
+
+.bg-white {
+    background-image: none !important;
+}
+
+.center-text {
+    text-align: center;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.list-icon--hide {
+    visibility: hidden;
+}
+
+.hide-visibility {
+    visibility: hidden
+}
+
+.bg-color {
+    background: #FAF5EE;
+}
+
+/*ANIMATION*/
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hidden-vertical {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+.hidden-right {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+.show-vertical {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.show-right {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hidden-blur {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show-blur {
+    opacity: 1;
+}
+
+/*Hero Section Animation*/
+
+.hero-description {
+    transition-delay: 1s;
+}
+
+/*HEADER ANIMATION*/
+.header-main {
+    opacity: 0;
+}
+
+
+.header-main.hidden-blur {
+    animation: fade-in 1s ease-in-out 1s forwards;
+
+}
+
+/*Button Appears After hero description and heading primary*/
+.btn {
+    opacity: 0; /* Initially hide the buttons */
+}
+
+.hero-image-box {
+    opacity: 0;
+}
+
+.btn.hidden-blur {
+    animation: fade-in 1s ease-in-out 0.5s forwards; /* Delay of 1.5s */
+}
+
+.hero-image-box.hidden-blur {
+    animation: fade-in 1s ease-in-out 0.5s forwards; /* Delay of 1.5s */
+}
+
+
+/*Hero Section Image Effects animation*/
+.hero-sparkle-effect-1.hidden-blur {
+    animation: fade-in 1s ease-in 0.4s forwards; /* Delay of 1.5s */
+}
+
+.hero-sparkle-effect-2.hidden-blur {
+    animation: fade-in 1s ease-in 0.4s forwards; /* Delay of 1.5s */
+}
+
+.hero-sparkle-effect-3.hidden-blur {
+    animation: fade-in 1s ease-in 0.4s forwards; /* Delay of 1.5s */
+}
+
+.hero-sparkle-effect-4.hidden-blur {
+    animation: fade-in 1s ease-in 0.4s forwards; /* Delay of 1.5s */
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Adds a slight downward movement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*GALLERY ANIMATION*/
+
+.gallery-item:nth-child(1) {
+    transition-delay: 200ms;
+}
+
+.gallery-item:nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.gallery-item:nth-child(3) {
+    transition-delay: 600ms;
+}
+
+.gallery-item:nth-child(4) {
+    transition-delay: 700ms;
+}
+
+.gallery-item:nth-child(5) {
+    transition-delay: 800ms;
+}
+
+.gallery-item:nth-child(6) {
+    transition-delay: 900ms;
+}
+
+.gallery-item:nth-child(7) {
+    transition-delay: 1000ms;
+}
+
+.gallery-item:nth-child(8) {
+    transition-delay: 1200ms;
+}
+
+.gallery-item:nth-child(9) {
+    transition-delay: 1400ms;
+}
+
+.gallery-item:nth-child(10) {
+    transition-delay: 1600ms;
+}
+
+.gallery-item:nth-child(11) {
+    transition-delay: 1800ms;
+}
+
+.gallery-item:nth-child(12) {
+    transition-delay: 2000ms;
+}
+
+/*If nobody wants to see animation*/
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+
+    .hidden-vertical {
+        transition: none;
+    }
+
+    .hidden-right {
+        transition: none;
+    }
+
+    .hidden-blur {
+        transition: none;
+    }
+}

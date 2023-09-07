@@ -1,0 +1,278 @@
+/*Seperate Page*/
+
+
+/********************************************************************/
+/*ABOUT US*/
+/********************************************************************/
+
+
+.about-us-featured {
+    padding: 7.4rem 0 3.2rem 0;
+}
+
+.header-about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #FAF5EE;*/
+    background-color: white;
+    padding: 0 4.8rem;
+    /*Fixed height to make the header sticky (follow whenever user scrolls down)*/
+    height: 8rem;
+    z-index: 1001; /* Make sure this is higher than the z-index of any elements in about us section */
+    position: relative;
+
+
+}
+
+
+.about-us-bg {
+    background-image: url("../images/about-us-section-bg.png");
+    background-repeat: repeat-y;
+    background-color: #FAF5EE;
+}
+
+.about-us-text {
+    font-family: "Rubik", sans-serif;
+    color: #444444;
+
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 1.6;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+}
+
+.services p span {
+    font-size: 3rem;
+}
+
+
+/********************************************************************/
+/*Timeline*/
+/********************************************************************/
+
+.timeline-container {
+    position: relative;
+    max-width: 120rem;
+    margin: 10rem auto;
+    /*background-color: #FAF5EE;*/
+}
+
+.timeline-box {
+    padding: 1rem 5rem;
+    position: relative;
+    width: 50%;
+
+    animation: movedown 2s ease-out forwards;
+
+    opacity: 0;
+
+}
+
+
+.text-box h2 {
+    font-weight: 600;
+}
+
+.text-box {
+    padding: 2rem 3rem;
+    background: #ffffff;
+    border-radius: 0.6rem;
+    font-size: 1.5rem;
+    position: relative;
+
+}
+
+/*Line*/
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 0.6rem;
+    height: 100%;
+    background: white;
+
+    top: 0;
+    left: 50%;
+    margin-left: -0.3rem;
+    z-index: 1;
+
+    animation: moveline 6s linear forwards;
+}
+
+
+.left-container {
+    left: 0;
+}
+
+.right-container {
+    right: -50%;
+}
+
+
+.left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 36%;
+    z-index: 1;
+    border-top: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid transparent;
+    border-left: 1.5rem solid white;
+    right: -1.5rem;
+
+}
+
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 36%;
+    z-index: 1;
+    border-top: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid transparent;
+    border-right: 1.5rem solid white;
+    left: -1.4rem;
+}
+
+.right-container img {
+    left: -2rem;
+}
+
+
+.text-box h2 {
+    font-weight: 600;
+}
+
+.text-box small {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.text-box p {
+    line-height: 1.2;
+}
+
+
+.timeline-desc-img-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.timeline-box .timeline-desc-img-box img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*STICKY NAVIGATION*/
+
+.sticky .header-about-us {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #ffffff;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+
+    /*Lesser z index than mobile nav menu button*/
+    z-index: 888;
+}
+
+/*Animation*/
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        filter: blur(2px);
+        transform: translateY(-3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+
+}
+
+.timeline-box:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.timeline-box:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.timeline-box:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.timeline-box:nth-child(4) {
+    animation-delay: 3s;
+}
+
+.timeline-box:nth-child(5) {
+    animation-delay: 4s;
+}
+
+/*Responsive*/
+/********************************************************************/
+/*BELOW 800px
+/********************************************************************/
+@media screen and (max-width: 50em) {
+
+    .timeline-container {
+        margin: 3.125rem auto;
+    }
+
+    .timeline-container::after {
+        left: 1.9rem;
+    }
+
+    .timeline-box {
+        width: 100%;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .text-box {
+        font-size: 0.81rem;
+    }
+
+    .text-box small {
+        margin-bottom: 0.63rem;
+    }
+
+    .right-container {
+        left: 0;
+    }
+
+    .left-container img,
+    .right-container img {
+        left: 0.63rem;
+    }
+
+    .right-container-arrow,
+    .left-container-arrow {
+        display: none;
+    }
+}
+

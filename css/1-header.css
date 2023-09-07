@@ -1,0 +1,179 @@
+/********************************************************************/
+/*HEADER*/
+/********************************************************************/
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 4.8rem;
+
+    /*For hidden blur animation- set opacity to zero*/
+    opacity: 0;
+
+    /*Fixed height to make the header sticky (follow whenever user scrolls down)*/
+    height: 9.6rem;
+    z-index: 1001; /* Make sure this is higher than the z-index of any elements in hero-section */
+    position: relative;
+
+
+}
+
+.logo {
+    height: 12rem;
+    width: auto;
+}
+
+
+/********************************************************************/
+/*NAVIGATION*/
+/********************************************************************/
+
+
+.main-social-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.main-nav-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.main-nav-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+    padding: 0 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+    font-size: 1.8rem;
+    position: relative;
+
+    transition: all 0.3s;
+}
+
+/*Hover effect for underline*/
+.main-nav-link:after {
+    content: "";
+    position: absolute;
+    background-color: #e7757f;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -1rem;
+
+    transition: all 0.3s;
+}
+
+.main-nav-link:hover:after {
+    width: 100%;
+}
+
+/*END OF Hover effect for underline*/
+
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: #e1525f;
+}
+
+.main-nav-link.nav-call-to-action:link,
+.main-nav-link.nav-call-to-action:visited {
+    display: inline-block;
+    color: white;
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    background-color: #e7757f;
+
+    transition: background-color 0.3s;
+
+}
+
+.main-nav-link.nav-call-to-action:hover,
+.main-nav-link.nav-call-to-action:active {
+    background-color: #e1525f;
+
+}
+
+.socials-nav {
+    flex: 1;
+    /*padding: 0 3.2rem;*/
+}
+
+.social-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+    justify-content: flex-end; /* Add this line */
+}
+
+.social-icon-div {
+    display: flex;
+    gap: 2.8rem;
+}
+
+.social-icon-mobile {
+    display: none;
+}
+
+
+/*STICKY NAVIGATION*/
+
+.sticky .header-main {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+
+    /*Lesser z index than mobile nav menu button*/
+    z-index: 9999;
+}
+
+/*.sticky .hero-section {*/
+/*    margin-top: 9.6rem;*/
+/*}*/
+
+
+/*Mobile Nav*/
+
+
+.button-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    display: none;
+}
+
+.icon-mobile-nav {
+    height: 3.2rem;
+    width: 3.2rem;
+    color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
+}

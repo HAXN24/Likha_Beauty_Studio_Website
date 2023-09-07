@@ -1,0 +1,33 @@
+
+.booking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #FAF5EE;*/
+    background: rgba(255, 255, 255, 0.51);
+    padding: 0 4.8rem;
+    /*Fixed height to make the header sticky (follow whenever user scrolls down)*/
+    height: 8rem;
+    z-index: 1001; /* Make sure this is higher than the z-index of any elements in about us section */
+    position: relative;
+    border-bottom: 1px solid #e7757f;
+
+
+}
+
+/*Square booking*/
+.booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(231, 117, 127, 0.41);
+}
+
+iframe {
+    max-width: 85%;
+    height: 80% !important;
+    vertical-align: top;
+    padding-bottom: 12rem;
+}
+

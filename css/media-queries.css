@@ -1,0 +1,1014 @@
+/*rem and em do not depend on html font-size in media queries. instead 1rem = 1em = 16px*/
+
+
+/********************************************************************/
+/*BELOW 1868px width
+/********************************************************************/
+@media (max-width: 116.6875em) {
+    .hero {
+        max-width: 120rem;
+        padding: 0 8rem;
+    }
+
+    .heading-primary {
+        font-size: 6.2rem;
+    }
+
+    .service-title {
+        font-size: 2.4rem;
+    }
+
+    .service-description {
+
+        font-size: 1.6rem;
+    }
+}
+
+/********************************************************************/
+/*BELOW 1551px width
+/********************************************************************/
+@media (max-width: 96.875em) {
+
+    /*Header*/
+    .header-main {
+        padding: 0 1.8rem;
+    }
+
+    .booking-header {
+        padding: 0 1.8rem;
+    }
+
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: 1.7rem;
+    }
+
+    .logo {
+        height: 12.5rem;
+        width: auto;
+    }
+
+    /*Hero Section*/
+    .hero-section {
+        width: 100%;
+    }
+
+    .hero-description {
+        font-size: 1.6rem;
+    }
+
+    /*Services*/
+    .heading-services-in {
+        font-size: 4.8rem;
+
+    }
+
+    /*Testimonial*/
+    .testimonial-text {
+        margin-bottom: 0.8rem;
+    }
+
+    .heading-secondary {
+        font-size: 4.2rem;
+    }
+
+}
+
+/*Location & Pricing Header*/
+.pricing-font-size {
+    font-size: 5.6rem;
+}
+
+/* ABOUT US*/
+.about-us-text {
+    font-size: 2.2rem;
+}
+
+/********************************************************************/
+/*BELOW 1391px width
+/********************************************************************/
+@media (max-width: 86.875em) {
+
+    .container {
+        padding: 0 4.8rem;
+    }
+
+    .main-nav-link:link, .main-nav-link:visited {
+        font-size: 1.6rem;
+    }
+
+    .heading-secondary {
+        margin-bottom: 4.8rem;
+    }
+
+
+    .hero-description {
+        font-size: 1.8rem;
+    }
+
+    .btn,
+    .btn:link,
+    .btn:visited {
+        padding: 1.4rem 2.4rem;
+    }
+
+    .subheading {
+        font-size: 1.4rem;
+    }
+
+    .testimonial-text {
+        font-size: 1.4rem;
+    }
+
+    .gallery {
+        padding: 1.6rem 2.8rem 1.6rem 1.6rem;
+    }
+
+
+    /*Location & Pricing Header*/
+    .pricing-font-size {
+        font-size: 5.2rem;
+    }
+
+    .pricing-label {
+        font-size: 4.8rem;
+    }
+
+    .likha-address {
+        font-size: 2rem;
+    }
+
+
+}
+
+/********************************************************************/
+/*BELOW 1285px width
+/********************************************************************/
+
+@media (max-width: 80.31em) {
+
+
+    .hero {
+        /*padding: 0 8rem;*/
+        gap: 3.2rem;
+
+    }
+
+
+    .heading-primary {
+        font-size: 5.2rem;
+    }
+
+    .header-main {
+        padding: 0 1.2rem 0 0;
+    }
+
+    .booking-header {
+        padding: 0 1.2rem 0 0;
+    }
+
+
+    .hero-description {
+        font-size: 1.6rem;
+    }
+
+    .heading-services-in {
+        font-size: 4.2rem;
+
+    }
+
+    .subheading {
+        font-size: 1.2rem;
+    }
+
+    .heading-secondary {
+        font-size: 3.2rem;
+    }
+
+    .service-description {
+        font-size: 1.4rem;
+    }
+
+    .service-content {
+        padding: 3.2rem 2.4rem 4.8rem 2.4rem;
+    }
+
+    /*Location & Pricing Header*/
+    .pricing-font-size {
+        font-size: 4.4rem;
+    }
+
+    .pricing-label {
+        font-size: 4.4rem;
+    }
+
+    .pricing-list {
+        font-size: 1.6rem;
+    }
+
+    .store-hours-header {
+        font-size: 3rem
+    }
+
+    .service-title {
+        font-size: 2rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn,
+    .btn:link,
+    .btn:visited {
+        padding: 1.4rem 2.4rem;
+        font-size: 1.8rem;
+    }
+
+    .main-nav-list {
+        padding: 0 3.2rem 0 0;
+        gap: 2.4rem;
+    }
+
+    .hours-list {
+        font-size: 1.6rem;
+    }
+
+    .social-list {
+        gap: 2.4rem;
+    }
+
+    .about-us-text {
+        font-size: 2rem;
+    }
+
+
+    .store-loc {
+        font-size: 1.8rem;
+    }
+
+    .list-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .testimonials-container{
+        padding: 4.8rem;
+    }
+    .testimonial-name{
+        font-size: 1.4rem;
+    }
+
+    .testimonials{
+        grid-template-columns: 1fr;
+        row-gap: 3.2rem;
+    }
+
+}
+
+/********************************************************************/
+/*BELOW 1073px
+/********************************************************************/
+@media (max-width: 67.75em) {
+
+    .main-nav-link.nav-call-to-action:link, .main-nav-link.nav-call-to-action:active {
+        padding: 1.2rem;
+    }
+
+    .heading-primary {
+        font-size: 4.4rem;
+    }
+
+    .header-main {
+        padding-right: 1.2rem;
+    }
+
+    .booking-header {
+        padding: 1.2rem !important;
+    }
+
+
+    .testimonials {
+        margin-bottom: 3.2rem;
+        column-gap: 3.2rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tag {
+        font-size: 1rem;
+    }
+
+    .btn,
+    .btn:link,
+    .btn:visited {
+        padding: 1.2rem 2rem;
+        font-size: 1.6rem;
+    }
+
+    .service-title {
+        font-size: 2rem;
+    }
+
+    .hero-flower-effect-1 {
+        top: 23rem;
+    }
+
+    .hero-flower-effect-2 {
+        top: 23.5rem;
+    }
+
+    .main-nav-link:link, .main-nav-link:visited {
+        font-size: 1.4rem;
+    }
+
+    .logo {
+        height: 9.8rem;
+        width: auto;
+    }
+
+    .address {
+        font-size: 1.4rem;
+    }
+
+    .store-hours-header {
+        font-size: 2.4rem;
+    }
+
+
+    .individual-hours {
+        justify-content: space-between;
+        padding: 0 4rem;
+    }
+
+    .footer-link:link, .footer-link:visited {
+        font-size: 1.4rem;
+    }
+
+
+    .col-gap-lg {
+        column-gap: 6.4rem !important;
+    }
+
+    .grid--2--cols-auto-fit {
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+
+    .margin-left-lg {
+        margin-left: 20rem !important;
+    }
+
+    .testimonials-container {
+        padding: 9.6rem 4.3rem;
+    }
+
+    .testimonials{
+        row-gap: 0;
+    }
+
+
+}
+
+/********************************************************************/
+/*BELOW 953px
+/********************************************************************/
+@media (max-width: 59.5625em) {
+
+    /*.container {*/
+    /*    padding: 0 8rem;*/
+    /*}*/
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .heading-primary {
+        font-size: 5.2rem;
+    }
+
+    .hero-img {
+        width: 60%;
+        height: auto;
+    }
+
+    .hero-image-box {
+        order: 1;
+    }
+
+    .hero-text-box {
+        order: 2;
+    }
+
+
+    .hero-flower-effect-1 {
+        height: 50%;
+        width: auto;
+        top: 43.2rem;
+        left: -8.6rem;
+    }
+
+    .hero-flower-effect-2 {
+        height: 50%;
+        width: auto;
+        top: 44.2rem;
+        right: -13.8rem;
+    }
+
+    .hero-sparkle-effect-1 {
+        height: 30%;
+        width: auto;
+        top: 27.3rem;
+        left: -4.4rem;
+    }
+
+    .hero-sparkle-effect-2 {
+        height: 30%;
+        width: auto;
+        bottom: -3.2rem;
+        left: 12.9rem;
+    }
+
+    .hero-sparkle-effect-3 {
+        height: 30%;
+        width: auto;
+        top: 29.2rem;
+        right: -5.5rem;
+    }
+
+    .hero-sparkle-effect-4 {
+        height: 30%;
+        width: auto;
+        bottom: -5.5rem;
+        right: 8rem;
+    }
+
+
+    .hero-mobile-border-effect-1 {
+        display: block;
+        height: 30%;
+        width: auto;
+        top: -2.2rem;
+        left: -3.7rem;
+    }
+
+    .hero-mobile-border-effect-2 {
+        display: block;
+        height: 30%;
+        width: auto;
+        position: absolute;
+
+        top: -2.2rem;
+        right: -3.7rem;
+        transform: scaleX(-1);
+    }
+
+    /*MOBILE NAVIGATION */
+    .social-icon-mobile {
+
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.8rem;
+    }
+
+    .button-mobile-nav {
+        display: block;
+
+        /*Z index to make the button on top of the white nav container*/
+        z-index: 9999;
+        order: 3;
+    }
+
+    .main-social-box {
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2.4rem;
+
+    }
+
+    /*Change order of logo and social icons */
+    .social-icon-mobile {
+        order: 1;
+        gap: 1rem;
+    }
+
+    .logo-text-box {
+        order: 2;
+    }
+
+    .logo-text-box img {
+        padding-right: 4.8rem;
+        height: 12rem;
+        width: auto;
+    }
+
+
+    .main-nav-box {
+        background-color: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        padding-top: 30rem;
+        transform: translateX(100%);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+
+        transition: all 0.5s ease-in-out;
+
+    }
+
+    .nav-open .main-nav-box {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+
+    }
+
+    .nav-open .icon-mobile-nav[name="close-outline"] {
+        display: block;
+    }
+
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+    }
+
+
+    .social-icon-mobile {
+        order: 1;
+    }
+
+    /*Switch position call button and social icons*/
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        order: 1;
+    }
+
+    .social-icon-div {
+        order: 2;
+    }
+
+
+    .main-nav-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        gap: 2.8rem;
+    }
+
+    .social-list {
+        margin-top: 2.4rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: 2.4rem;
+    }
+
+    .list-icon {
+
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+
+    /*END OF MOBILE NAVIGATION */
+    .grid--3--cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .heading-primary {
+        font-size: 5.2rem;
+    }
+
+    .section-testimonials {
+        grid-template-columns: 1fr;
+        row-gap: 6.2rem;
+    }
+
+    .testimonials{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 1.2rem;
+    }
+
+    .testimonials-container {
+        text-align: center;
+        padding: 9.6rem 9.6rem 0 9.6rem;
+    }
+
+    .nice-things-text {
+        font-size: 3.6rem;
+    }
+
+    .testimonial-header {
+        font-size: 1.6rem;
+    }
+
+
+    .gallery {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    /*ABOUT US PAGE*/
+    .text-box {
+        font-size: 1.4rem;
+        padding: 2rem 2.4rem;
+    }
+
+    /*Location*/
+    .grid--2--cols {
+        /*grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));*/
+        grid-template-columns: 1fr;
+    }
+
+    .store-loc {
+        text-align: center;
+    }
+
+
+    .individual-hours {
+        padding: 0 14.8rem;
+    }
+
+    .address {
+        font-size: 1.2rem;
+    }
+
+    .footer-heading {
+        font-size: 1.6rem;
+    }
+
+    .footer-link.footer-link:link,
+    .footer-link:visited {
+        font-size: 1.2rem;
+    }
+
+    .pop-up.active .content {
+        width: 80%;
+    }
+
+
+
+
+}
+
+/********************************************************************/
+/*BELOW 768px for full size image overlay
+/********************************************************************/
+@media (max-width: 48em ) {
+    .gallery .popup-img img {
+        width: 70%;
+        height: auto;
+    }
+
+    .left-arrow {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    .right-arrow {
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+
+    .testimonials{
+       column-gap: 10rem;
+    }
+}
+
+/********************************************************************/
+/*BELOW 700px
+/********************************************************************/
+@media (max-width: 43.75em) {
+
+
+    .container {
+        padding: 0 12.8rem;
+    }
+
+    .hero {
+        padding: 0 4.8rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    .section-testimonials {
+        background-image: linear-gradient(to top, #FAF5EE, rgba(231, 117, 127, 0.24));
+    }
+
+
+    .the-likha-header {
+        font-size: 3.3rem;
+    }
+
+    .logo {
+        height: 12rem;
+        width: auto;
+    }
+
+    .social-icon {
+        height: 1.6rem;
+        width: auto;
+    }
+
+    .socials-col p {
+        padding-bottom: 1rem;
+    }
+
+    .socials-footer-nav {
+        gap: 1.8rem;
+    }
+
+    .services-footer-nav {
+        gap: 2rem;
+    }
+
+    /*.services-col p {*/
+    /*    padding-bottom: 2.4rem;*/
+    /*}*/
+    /*SERVICES*/
+    .grid--3--cols {
+        grid-template-columns: 1fr;
+    }
+
+    .heading-services-in {
+        font-size: 3.6rem;
+    }
+
+    /*HERO*/
+    .heading-primary {
+        font-size: 4.4rem;
+    }
+
+    .hero-description {
+        font-size: 1.4rem;
+    }
+
+    /*Location*/
+    .individual-hours {
+        padding: 0;
+    }
+
+    .container-location {
+        padding: 0 7.4rem;
+    }
+
+    .content {
+        font-size: 1.6rem !important;
+    }
+
+    .testimonials{
+        column-gap: 5rem;
+    }
+    .testimonial-text{
+        font-size: 1.2rem;
+    }
+
+    .testimonial-name{
+        font-size: 1.2rem;
+    }
+
+}
+
+
+/*********************************************************************!*/
+/*BELOW 600px
+/********************************************************************/
+@media (max-width: 37.5em) {
+
+    .container {
+        padding: 0 6.4rem;
+    }
+
+    .grid--2--cols-auto-fit {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+
+    .margin-left-lg {
+        margin-left: 11.5rem !important;
+    }
+
+    .hero-section {
+        padding: 4.8rem 4.8rem 4.8rem 4.8rem;
+    }
+
+    .hero {
+        padding: 0 2.4rem;
+    }
+
+    .hero-img {
+        width: 80%;
+        height: auto;
+    }
+
+    .testimonial-header {
+        font-size: 1.4rem;
+    }
+
+    .nice-things-text {
+        font-size: 2.4rem;
+    }
+
+    .heading-primary {
+        font-size: 4.4rem;
+    }
+
+    .hero-flower-effect-1 {
+        height: 50%;
+        width: auto;
+        top: 43.7rem;
+        left: -12.2rem;
+    }
+
+    .hero-flower-effect-2 {
+        height: 50%;
+        width: auto;
+        top: 42rem;
+        right: -16rem;
+    }
+
+    .hero-sparkle-effect-2 {
+        height: 20%;
+        width: auto;
+        bottom: 1.5rem;
+        left: 2.9rem;
+    }
+
+    .btn, .btn:link, .btn:visited {
+        font-size: 1.4rem;
+    }
+
+    .store-loc {
+        font-size: 1.4rem;
+
+    }
+
+    .footer-menu-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 4.8rem;
+
+    }
+
+    .logo-col {
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+
+    .socials-col {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+    .services-col {
+        grid-column: 3 / 4;
+        grid-row: 1;
+        gap: 3.8rem;
+    }
+
+
+    .address-col {
+        grid-column: span 3;
+    }
+
+    .container-location {
+        padding: 0 4.8rem;
+    }
+
+    .list-icon {
+        height: 2rem;
+        width: 2rem;
+    }
+
+
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: 1.8rem;
+    }
+
+    .about-us-text {
+        font-size: 1.4rem;
+    }
+
+    .testimonial-text {
+        font-size: 1.2rem;
+    }
+
+    .testimonial-name {
+        font-size: 1.2rem;
+    }
+
+    /*ABOUT US*/
+    .header-about-us {
+        padding: 0 1.2rem;
+    }
+
+    .about-us-text {
+        font-size: 1.4rem;
+    }
+
+    .heading-services-in {
+        font-size: 3rem;
+    }
+
+    .service-title {
+        font-size: 2.2rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .service-description {
+        font-size: 1.4rem;
+    }
+
+    .logo-text-box img {
+        height: 10rem;
+        width: auto;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+
+    .text-box {
+        font-size: 1.2rem;
+    }
+
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: 2rem;
+    }
+
+    .content {
+        font-size: 1.2rem !important;
+    }
+
+    .booking-header {
+        padding: 0 !important;
+    }
+
+    .content {
+        font-size: 1.2rem !important;
+    }
+
+}
+
+/*********************************************************************!*/
+/*BELOW 386px
+/********************************************************************/
+@media (max-width: 24.125em) {
+
+
+    .margin-right-sm {
+        margin-right: 0.2rem !important;
+    }
+
+    .main-nav-link:link, .main-nav-link:visited {
+        font-size: 1.8rem;
+    }
+
+    .modal-header {
+        font-size: 1.8rem;
+    }
+
+    .modal-header-text {
+        padding-top: 0.2rem !important;
+    }
+
+    .content {
+        font-size: 1rem !important;
+    }
+
+
+    .modal-call-btn:link, .modal-call-btn:visited,
+    .modal-book-btn:link, .modal-book-btn:visited {
+        font-size: 1.2rem !important;
+        padding: 1rem 1rem !important;
+    }
+
+    .service-description {
+        font-size: 1.2rem;
+    }
+}

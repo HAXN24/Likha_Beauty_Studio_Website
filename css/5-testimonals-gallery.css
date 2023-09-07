@@ -1,0 +1,192 @@
+
+.testimonials-gallery-section {
+    padding: 7.4rem 0 3.2rem 0;
+}
+
+.section-testimonials {
+    background-image: url("../images/testimonials-gallery-bg-with-pics.webp");
+    background-size: cover;
+    background-repeat: repeat-x;
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    align-items: center;
+    font-family: "Rubik", sans-serif;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+.testimonials-container {
+    padding: 9.6rem;
+}
+
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4.8rem;
+    column-gap: 4.8rem;
+}
+
+
+.testimonial-img {
+    width: 6.4rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+.stars {
+    color: #EABC06;
+    margin-bottom: 1.4rem;
+}
+
+.testimonial-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+    color: #6f6f6f;
+
+}
+
+/*Implemented links for google reviews - for users to check the reviews are legit!*/
+.testimonial-link:link,
+.testimonial-link:visited {
+    text-decoration: none;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+    border-radius: 9px;
+    color: #6f6f6f;
+
+    transition: all 0.3s;
+
+}
+
+.testimonial-link:hover,
+.testimonial-link:active {
+
+    /*box shadow trick to not make grid wiggly*/
+    box-shadow: inset 0 0 0 1px #e7757f;
+}
+
+.testimonial-name {
+
+    font-size: 1.6rem;
+    color: #777777;
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
+}
+
+.gallery-item {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+
+/*Implementing popup window with image's full size */
+.gallery .popup-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+
+    /*popup-img always showing but hidden*/
+
+    opacity: 0; /* Initially transparent */
+    pointer-events: none;
+    transition: all 0.3s ease; /* Add the transition for opacity */
+}
+
+.gallery .popup-img.show {
+
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.close-img-btn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+
+.arw-btn {
+    position: absolute;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #ffffff;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+
+}
+
+.arw-btn:hover {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: black;
+}
+
+/*Making sure arrows are centered*/
+.left-arrow {
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+}
+
+.right-arrow {
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+}
+
+.gallery .popup-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #ffffff;
+    border-radius: 5px;
+    width: 50%;
+    height: 99%;
+    object-fit: cover;
+}
+
+/*!*making action responsive*!*/
+/*!*html font size reverts back to 16px=1rem, so make sure to use 16px as divisor when dividing px*!*/
+/*!*768px / 16 = 48rem == 48em*!*/
+/*@media (max-width: 48em) {*/
+/*    .gallery .popup-img img {*/
+/*        width: 95%;*/
+/*    }*/
+/*}*/

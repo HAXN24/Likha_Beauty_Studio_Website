@@ -1,0 +1,78 @@
+/*!*PRELOADER*!*/
+
+
+/*!*#preloader {*!*/
+/*!*    background: rgba(0, 0, 0, 0.9);*!*/
+/*!*    height: 100vh;*!*/
+/*!*    width: 100%;*!*/
+/*!*    position: fixed;*!*/
+/*!*    z-index: 1004;*!*/
+/*!*}*!*/
+
+/*.pre-loader-container {*/
+/*    background: rgba(0, 0, 0, 0.9);*/
+/*    width: 100%;*/
+/*    min-height: 100vh;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    flex-direction: column;*/
+/*    z-index: 99999999999;*/
+/*}*/
+
+/*.text {*/
+/*    font-family: "Dancing Script", cursive;*/
+/*    color: white;*/
+/*    margin-bottom: 2.5rem;*/
+/*    font-size: 2rem;*/
+/*    !*letter-spacing: 1.2rem;*!*/
+/*}*/
+
+/*.loading {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.loading .line-box {*/
+/*    padding: .2rem;*/
+/*    width: 40%;*/
+/*    border: .2rem solid #ffffff;*/
+/*    border-radius: 2rem;*/
+/*}*/
+
+/*.loading .line-box .line {*/
+/*    height: 2rem;*/
+/*    border-radius: 2rem;*/
+/*    background: #ffffff;*/
+/*    animation: loading 5s forwards cubic-bezier(0, 0, 0, 0);*/
+/*}*/
+
+/*@keyframes loading {*/
+/*    0% {*/
+/*        width: 0;*/
+/*    }*/
+/*    100% {*/
+/*        width: 100%;*/
+/*    }*/
+
+/*}*/
+
+/*!* Fade Out Animation *!*/
+/*@keyframes fadeOut {*/
+/*    0% {*/
+/*        opacity: 1;*/
+/*    }*/
+/*    100% {*/
+/*        opacity: 0;*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+
+/*!* Apply Fade Out Animation to Preloader *!*/
+/*.pre-loader-container.fade-out {*/
+/*    animation: fadeOut 1s ease-in-out forwards 3s;*/
+/*}*/
