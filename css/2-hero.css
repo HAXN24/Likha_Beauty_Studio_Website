@@ -46,6 +46,8 @@
     position: absolute;
     top: 26rem;
     left: -12rem;
+
+    animation: animateFlowerLeft 2s ease-out;
 }
 
 .hero-flower-effect-2 {
@@ -54,6 +56,8 @@
     top: 27.5rem;
     right: -15rem;
     z-index: 1;
+
+    animation: animateFlowerRight 2s ease-out;
 }
 
 /*SPARKLES*/
@@ -105,5 +109,32 @@
     display: none;
     height: 50%;
     position: absolute;
+}
+
+
+@keyframes animateFlowerLeft {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes animateFlowerRight {
+
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
