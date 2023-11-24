@@ -1,10 +1,7 @@
 `use strict`;
 
-
 // Improve scrolling experience for touchscreens- hopefully fixes the issue where the scrolling stops at the middle of the screen-preventing from scrolling further, jumps up and down before scrolling again.
-window.addEventListener('touchmove', event => {
-}, { passive: true });
-
+window.addEventListener("touchmove", (event) => {}, { passive: true });
 
 // --------------------------------------------------------------------------------------------------------------------
 //Function for Book Now and Call Now
@@ -32,15 +29,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Check if in home page to call function and avoid error
   if (body.contains(header)) {
-
     //1.) Call Now Button
     callUsWindowFunction(callButton);
 
     //2.) Book Now Button
     callUsWindowFunction(bookButton);
-
   } else callUsWindowFunction(callButton);
-
 });
 
 // --------------------------------------------------------------------------------------------------------------------
@@ -49,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
 closeButton.onclick = () => {
   popUpClass.classList.remove(`active`);
 };
-
 
 // --------------------------------------------------------------------------------------------------------------------
 // Display schedule for users time;
@@ -87,4 +80,4 @@ const modalDay = document.querySelector(`.day`);
 const modalTime = document.querySelector(`.time`);
 
 modalDay.textContent = dayToday.toString();
-modalTime.textContent = timeToday.toString() + "!";
+modalTime.textContent = timeToday.toString();
