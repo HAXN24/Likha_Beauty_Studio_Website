@@ -12,7 +12,6 @@ const popUpOverlayPromo = document.querySelector(`.overlay-book-promo`);
 // Function that closes promo modal window when overlay book clicked
 popUpOverlayPromo.onclick = (event) => {
   if (event.target === popUpOverlayPromo) {
-    console.log(`closedwew`);
     popUpClassPromo.classList.remove(`open`);
   }
 };

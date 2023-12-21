@@ -2,7 +2,7 @@
 # Enable the Rewrite Engine
 RewriteEngine on
 
-# Redirect /index or /index.html to /home
+# Redirect /index or /NicolloOcbena_BonusAssignment.html to /home
 RewriteRule ^index(\.html)?$ /home [R=301,L]
 
 # Handle other .html files
@@ -13,5 +13,5 @@ RewriteRule ^ /%1 [NC,L,R]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
-# Special handling for 'home' to point to 'index.html'
+# Special handling for 'home' to point to 'NicolloOcbena_BonusAssignment.html'
 RewriteRule ^home$ /index.html [NC,L]
